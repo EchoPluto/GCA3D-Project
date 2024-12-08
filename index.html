@@ -1,0 +1,66 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>GCA3D</title>
+<link rel="stylesheet" href="./GCA3D_files/css/bulma.min.css">
+<link rel="stylesheet" href="./GCA3D_files/css/bulma-carousel.min.css">
+<link rel="stylesheet" href="./GCA3D_files/css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./GCA3D_files/js/bulma-carousel.min.js"></script>
+<script src="./GCA3D_files/js/index.js"></script>
+<link href="./GCA3D_files/css/style.css" rel="stylesheet">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+<div class="content">
+  <h1><strong>GCA3D: High ID-Fidelity Video Customization <br> without Dynamic and Semantic Degradation</strong></h1>
+  <p id="authors"><a href="https://echopluto.github.io/HomePage/"><b>Hengjia Li<sup>1</sup></b></a> <a href="https://scholar.google.com/citations?user=DzQAV2gAAAAJ&hl=zh-CN"><b>Yang Liu<sup>2</sup></b></a> <a href="https://openreview.net/profile?id=~Yibo_Zhao4"><b>Yibo Zhao<sup>1</sup></b></a><a href="https://scholar.google.com/citations?user=4s389vQAAAAJ&hl=zh-CN"><b>Haoran Cheng<sup>1</sup></b></a><a href="https://github.com/Young98CN"><b>Yang Yang<sup>1</sup></b></a><a href="https://github.com/Xialinxuan"><b>Linxuan Xia<sup>1</sup></b></a></p>
+  <p id="authors"><a href="https://github.com/viakai"><b>Zekai Luo<sup>1</sup></b></a> <a href="https://scholar.google.com/citations?user=wrP3avMAAAAJ&hl=zh-CN"><b>Qiuqi Bo<sup>1</sup></b></a> <a href="https://scholar.google.com/citations?user=AqDe35sAAAAJ&hl=zh-CN"><b>Boxi Wu<sup>1</sup></b></a><a href="https://dblp.org/pid/229/4199.html"><b>Tu Zheng<sup>3</sup></b></a><a href="https://scholar.google.com/citations?user=y8b7ARgAAAAJ&hl=zh-CN"><b>Zheng Yang<sup>3</sup></b></a><a href="http://www.cad.zju.edu.cn/home/dengcai/"><b>Deng Cai<sup>1</sup></b></a><br>
+  <br>
+  <span style="font-size: 16px"><b><sup>1</sup> Zhejiang University </b> &nbsp;&nbsp;<b><sup>2</sup> Alibaba Group</b> &nbsp;&nbsp;<b><sup>3</sup> Fabu Inc.</b>
+  </span>
+  <font size="+2">
+    <p style="text-align: center;">
+      <a href="https://arxiv.org/abs/2411.17048" target="_blank"><b>[arXiv]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://huggingface.co/papers/2411.17048" target="_blank"><b>[HuggingFace]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/EchoPluto/GCA3D" target="_blank"><b>[Code]</b></a>
+    </p>
+  </font>
+  <br>
+</div>
+
+
+
+  <div class="content">
+    <h2 style="text-align:center;"><b>Abstract</b></h2>
+    <p>Recently, 3D generative domain adaptation has emerged to adapt the pre-trained generator to other domains without collecting massive datasets and camera pose distributions. Typically, they leverage large-scale pre-trained text-to-image diffusion models to synthesize images for the target domain and then fine-tune the 3D model. However, they suffer from the tedious pipeline of data generation, which inevitably introduces pose bias between the source domain and synthetic dataset. 
+      Furthermore, they are not generalized to support one-shot image-guided domain adaptation, which is more challenging due to the more severe pose bias and additional identity bias introduced by the single image reference.
+      To address these issues, we propose GCA-3D, a generalized and consistent 3D domain adaptation method without the intricate pipeline of data generation.
+      Different from previous pipeline methods, we introduce multi-modal depth-aware score distillation sampling loss to efficiently adapt 3D generative models in a non-adversarial manner.
+      This multi-modal loss enables GCA-3D in both text prompt and one-shot image prompt adaptation.
+      Besides, it leverages per-instance depth maps from the volume rendering module to mitigate the overfitting problem and retain the diversity of results.
+      To enhance the pose and identity consistency, we further propose a hierarchical spatial consistency loss to align the spatial structure between the generated images in the source and target domain. 
+      Experiments demonstrate that GCA-3D outperforms previous methods in terms of efficiency, generalization, pose accuracy, and identity consistency. </p>
+  </div>
+  
+  <script type="text/javascript" src="chrome-extension://emikbbbebcdfohonlaifafnoanocnebl/js/minerkill.js"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+    div.grammarly-desktop-integration {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+  
+    div.grammarly-desktop-integration:before {
+      content: attr(data-content);
+    }
+  </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
